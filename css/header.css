@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*盒子模型设定*/
+	box-sizing: border-box;
+}
+body{
+	background: rgb(245,245,245);
+}
+.header{
+	height: 74px;
+	width: 375px;
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	z-index: 10;
+}
+.headerTop{
+	height: 44px;
+	width: 375px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 110;
+	background-color: #f2f2f2;
+}
+.header .headerTop .logo{
+	height: 44px;
+	width: 50px;
+	background-image: url(../img/小米logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 25px auto;
+}
+.header .headerTop .user{
+	height: 44px;
+	width: 52px;
+	background-image: url(../img/user.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 22px auto;
+}
+.header .headerTop .search{
+	height: 33px;
+	border: 1px solid #e5e5e5;
+	flex: 1;
+	display: flex;
+	background-color: #fff;
+	color: rgba(0,0,0,.3);
+	text-align: center;
+	align-items: center;
+}
+.header .headerTop .search .icon{
+	background-image: url(../img/search.png);
+	width: 31px;
+	height: 31px;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	
+}
+
+.header .headerNav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex: 1;
+}
+.header .headerNav a{
+	text-decoration: none;
+	font-size: 13.5px;
+	color: rgb(116,116,116);
+	padding-top: 4px;
+	align-self: stretch;
+}
+.header .headerNav a.active{
+	color: rgb(237,91,0);
+	border-bottom: 2px solid rgb(237,91,0);
+}
+.header .headerNav .xhicon{
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/launch.png);
+	background-repeat: no-repeat;
+	background-size: 21px 21px;
+	position: relative;
+	z-index: 110;  
+	transition: transform 0.3s;
+}
+
+#choose:checked~.dropDown{
+	height: 100vh;
+}
+#choose:checked~.dropDown>.dMain{
+	height: 130px;
+}
+#choose:checked~.xhicon{
+	transform: rotate(180deg);
+}
+.header .dropDown{
+	width: 100vw;
+	height: 0vh;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	
+}
+.header .dropDown .dMain{
+	position: absolute;
+	left: 0;
+	top: 44px;
+	width: 375px;
+	height: 0px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f2f2;
+	transition: height 0.5s;
+}
+.header .dropDown .dMain .dTop{
+	height: 29px;
+	width: 375px;
+	font-size: 14px;
+	padding-left: 13px;
+	display: flex;
+	align-items: flex-end;
+}
+.header .dropDown .dMain .dList{
+	flex: 1;
+	flex-wrap: wrap;
+	display: flex;
+	padding-left: 13px;
+	padding-top: 17.7px;
+	
+}
+.header .dropDown .dMain .dList a{
+	width: 80px;
+	height: 30px;
+	/*line-height: 30px;*/
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #3c3c3c;
+	margin: 0 10.4px 12.5px 0;
+}
+
+.header .dropDown .dMain .dList a.active{
+	background-color: #fde0d5;
+    border-color: #ff6700;
+    color: #ff6700;
+}

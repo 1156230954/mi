@@ -1,0 +1,156 @@
+.main{
+	position: relative;
+	top: 74px;
+	margin-bottom: 52px;
+}
+
+
+.swiper{
+	width: 375px;
+	height: 188px;
+	background-image: url(../img/swiper.jpg);
+	background-repeat: no-repeat;
+	background-size:  auto 100%;
+	background-position: center;
+	
+}
+
+.iconList{
+	width: 375px;
+	height: 160px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.iconItem{
+	width: 20%;
+	height: 80px;
+	
+}
+.iconItem>img{
+	width: 100%;
+	height: 100%;
+}
+
+.banner{
+	height: 265px;
+	width: 375px;
+	margin-top: 8.3px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner .lbanner{
+	height: 265px;
+	width:186.5px;
+	background-image: url(../img/pic1.webp);
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.banner .rbanner .rTop{
+	height: 131.3px;
+	width:186.5px;
+	background-image: url(../img/pic2.webp);
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.banner .rbanner .rBottom{
+	height: 131.3px;
+	width:186.5px;
+	background-image: url(../img/pic3.webp);
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.main .discovery{
+	height: 164px;
+	width: 375px;
+	margin-top: 8px;
+	background-image: url(../img/discovery.webp);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.bigAd{
+	height: 230px;
+	width: 375px;
+	margin-top: 8px;
+	background-image: url(../img/bigAd.webp);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.main .adList{
+	height: 256.4px;
+	width: 375px;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3.4px;
+	background-color: #FFFFFF;
+}
+
+.main .adList .adItem{
+	width: 178px;
+	height: 253px;
+	overflow: hidden;
+}
+
+.main .adList .adItem>.img{
+	width: 178px;
+	height: 146px;
+}
+
+.main .adList .adItem>.img img{
+	width: 100%;
+	height: auto;
+}
+
+.main .adList .adItem>.info{
+	background-color: rgb(245,245,245);
+	height: 107px;
+	width: 178px;
+	padding: 10.5px 14px 10.5px 14px;
+	text-align: center;
+}
+
+.main .adList .adItem>.info>.name{
+	font-size: 15px;
+    color: rgba(0,0,0,.87);
+}
+.main .adList .adItem>.info>.brief{
+	margin-top: 3.12px;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: rgba(0,0,0,.54);
+}
+.main .adList .adItem>.info>.price{
+	font-size: 14px;
+    color: #ea625b;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+.main .adList .adItem>.info>.price:before{
+	content: "\A5";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    text-decoration: none;
+}
+.main .adList .adItem>.info>.btn{
+	height: 30.3px;
+	margin: 0 auto;
+	width: 104px;
+    background: #ea625b;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    padding: 8.32px 0;
+    font-weight: 700;
+}
+

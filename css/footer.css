@@ -1,0 +1,27 @@
+.footer{
+	height: 52px;
+	width: 375px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	background-color: #FFFFFF;
+	padding: 5px 0;
+}
+.footer .fIcon{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 11.3px;
+	color: #999;
+	
+}
+.footer .fIcon:nth-child(1){
+	color: #ff6700;
+}
+.footer .fIcon>img{
+	height: 21px;
+	width: 21px;
+	
+}
