@@ -112,6 +112,8 @@
 	width: 178px;
 	padding: 10.5px 14px 10.5px 14px;
 	text-align: center;
+	position: relative;
+	top: -1px;
 }
 
 .main .adList .adItem>.info>.name{
